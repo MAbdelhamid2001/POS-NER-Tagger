@@ -1,5 +1,7 @@
 streamlit
+gradio
 tensorflow
 numpy
 pandas
 joblib
+
