@@ -1,7 +1,8 @@
-streamlit
-gradio
-tensorflow==2.13.0
-numpy
-pandas
 joblib
-
+streamlit==1.39.0
+tensorflow==2.13.0
+numpy==1.24.3
+pandas==2.1.1
+protobuf==4.24.3
+h5py==3.9.0
+rich==13.7.0
