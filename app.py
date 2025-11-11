@@ -4,6 +4,7 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import joblib
 import streamlit as st
+import re
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -20,6 +21,7 @@ pos2idx=joblib.load('pos2idx.joblib')
 
 
 def Predict_deploy(text):
+    text=re.sub(r"([?.!,¿])", r" \1 ",text)
     
     max_len=50
     text_len=len(text.split())
